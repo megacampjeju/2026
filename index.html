@@ -2,113 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>MeGa Science Camp</title>
+  <title>One Page Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
       margin: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
-      background-color: #f4f6f9;
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
       color: #333;
-      line-height: 1.7;
+      text-align: center;
     }
 
     header {
-      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+      background: #1e3a8a;
       color: white;
-      padding: 25px 40px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 28px;
-    }
-
-    header p {
-      margin: 5px 0 15px;
-      opacity: 0.9;
-    }
-
-    nav a {
-      color: white;
-      margin-right: 20px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
+      padding: 60px 20px;
     }
 
     section {
-      padding: 70px 40px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h2 {
-      color: #1e3a8a;
-      margin-bottom: 10px;
-    }
-
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-      margin-top: 25px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-    }
-
-    .highlight {
-      background: #e0f2fe;
-      border-left: 6px solid #0284c7;
-      padding: 15px;
-      margin-top: 20px;
-      border-radius: 6px;
-    }
-
-    ul {
-      padding-left: 20px;
+      padding: 60px 20px;
     }
 
     footer {
-      background: #0f172a;
+      background: #1e293b;
       color: white;
-      text-align: center;
-      padding: 25px;
-      margin-top: 60px;
+      padding: 20px;
     }
 
-    button {
-      background: #0284c7;
-      color: white;
-      border: none;
-      padding: 14px 24px;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 16px;
-      margin-top: 15px;
-    }
-
-    button:hover {
-      background: #0369a1;
-    }
-
-    @media (max-width: 600px) {
-      section {
-        padding: 50px 20px;
-      }
-      nav a {
-        display: block;
-        margin: 10px 0;
-      }
+    a {
+      color: #1e3a8a;
+      text-decoration: none;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -116,100 +41,27 @@
 <body>
 
   <header>
-    <h1>MeGa Science Camp</h1>
-    <p>Inspiring Curiosity · Building the Future</p>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#program">Program</a>
-      <a href="#schedule">Schedule</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <h1>One-Page Website</h1>
+    <p>This entire website is in one HTML file</p>
   </header>
 
-  <section id="home">
-    <h2>Welcome to MeGa Science Camp</h2>
-    <div class="card">
-      <p>
-        MeGa Science Camp is an immersive educational program designed for
-        middle- and high-school students who are curious about science,
-        technology, and the universe.
-      </p>
-
-      <div class="highlight">
-        🔬 Hands-on experiments  
-        💻 Coding & electronics  
-        🌌 Physics & astronomy  
-        🤖 Problem-based learning
-      </div>
-    </div>
+  <section>
+    <h2>About</h2>
+    <p>
+      This is a simple one-page webpage.
+      Everything — content and style — is inside a single file.
+    </p>
   </section>
 
-  <section id="program">
-    <h2>Camp Program</h2>
-    <div class="grid">
-
-      <div class="card">
-        <h3>Physics & Astronomy</h3>
-        <ul>
-          <li>Black holes & gravity</li>
-          <li>Exoplanets and life</li>
-          <li>Light, waves, and spectra</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Electronics & Coding</h3>
-        <ul>
-          <li>Arduino basics</li>
-          <li>Sensors & data</li>
-          <li>Simple robotics</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Scientific Thinking</h3>
-        <ul>
-          <li>How scientists ask questions</li>
-          <li>Experiments & errors</li>
-          <li>Presenting results</li>
-        </ul>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="schedule">
-    <h2>Sample Schedule</h2>
-    <div class="card">
-      <ul>
-        <li><strong>Day 1:</strong> Introduction · Physics of the Universe</li>
-        <li><strong>Day 2:</strong> Electronics & Arduino Programming</li>
-        <li><strong>Day 3:</strong> Experiments · Group Projects</li>
-        <li><strong>Day 4:</strong> Presentations · Science Showcase</li>
-      </ul>
-
-      <button onclick="showMessage()">Apply for Camp</button>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact & Registration</h2>
-    <div class="card">
-      <p><strong>Email:</strong> megasciencecamp@email.com</p>
-      <p><strong>Location:</strong> Jeju Island, South Korea</p>
-      <p><strong>Target group:</strong> Grades 6–12</p>
-    </div>
+  <section>
+    <h2>Contact</h2>
+    <p>Email: example@email.com</p>
+    <p><a href="#top">Back to top</a></p>
   </section>
 
   <footer>
-    <p>© 2026 MeGa Science Camp · All rights reserved</p>
+    <p>© 2026 One-Page Site</p>
   </footer>
-
-  <script>
-    function showMessage() {
-      alert("Thank you for your interest! Registration will open soon 😊");
-    }
-  </script>
 
 </body>
 </html>
