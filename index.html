@@ -1,16 +1,98 @@
-Here's a minimal "Hello World" HTML file. Save it as `hello.html` and open it in a browser.
-
-```html name=hello.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Hello Gansukh</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Simple one-page website with content and styles in a single HTML file." />
+  <title>One Page Website</title>
+
+  <style>
+    :root {
+      --brand-blue: #1e3a8a;
+      --footer-blue: #1e293b;
+      --bg: #f4f6f9;
+      --text: #333;
+      --max-width: 900px;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      text-align: center;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    header {
+      background: var(--brand-blue);
+      color: white;
+      padding: 60px 20px;
+    }
+
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: left;
+    }
+
+    section {
+      padding: 40px 0;
+    }
+
+    footer {
+      background: var(--footer-blue);
+      color: white;
+      padding: 20px;
+    }
+
+    a {
+      color: var(--brand-blue);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* small utility */
+    .center {
+      text-align: center;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Hello, Gansukh!</h1>
-  <p>This is a simple HTML page.</p>
+  <!-- provide a top anchor for "Back to top" -->
+  <a id="top"></a>
+
+  <header role="banner">
+    <h1>One-Page Website</h1>
+    <p>This entire website is in one HTML file</p>
+  </header>
+
+  <main role="main">
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About</h2>
+      <p>
+        This is a simple one-page webpage.
+        Everything — content and style — is inside a single file.
+      </p>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <p>Email: <a href="mailto:example@email.com">example@email.com</a></p>
+      <p class="center"><a href="#top">Back to top</a></p>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>© 2026 One-Page Site</p>
+  </footer>
 </body>
 </html>
-```
